@@ -1,13 +1,17 @@
-import React,{FC} from 'react';
-import './App.css';
+import React, { FC } from "react";
+import "./App.css";
 
-const App: FC = ()=>{
+const App: FC = () => {
   return (
     <div className="App">
-  <div className="header"></div>
-  <div className="todoList"></div>
+      <div className="header">
+        <input type="text" placeholder="...Task" />
+        <input type="number" placeholder="Deadline in  days"/>
+        <button id="btn">Add Task</button>
+      </div>
+      <div className="todoList"></div>
     </div>
   );
-}
+};
 
 export default App;
